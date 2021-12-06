@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sscot <sscot@student.42.fr>                +#+  +:+       +#+        */
+/*   By: pos31d0n <pos31d0n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 11:19:21 by sscot             #+#    #+#             */
-/*   Updated: 2021/10/23 21:54:36 by sscot            ###   ########.fr       */
+/*   Updated: 2021/12/06 19:24:20 by pos31d0n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,14 @@ typedef struct s_list
 	struct s_list	*next;
 }						t_list;
 
+int		ft_putchar(char c);
+int		ft_putnbr_low(unsigned int n);
+int		ft_putnbr_new(unsigned int number);
+int		ft_put_point(size_t n);
+int		ft_putnbr_up(unsigned int n);
+int		ft_putnbr(int number);
+int		ft_putstr(char *s);
+
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -31,8 +39,8 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_atoi(const char *str);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_bzero(void *s, size_t n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
