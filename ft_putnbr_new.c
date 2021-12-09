@@ -1,7 +1,7 @@
 
-#include "includes/libft.h"
+#include "ft_printf.h"
 
-static int	get_size(long n)
+static int	get_size_new(long n)
 {
 	int	size;
 
@@ -19,14 +19,14 @@ static int	get_size(long n)
 	return (size);
 }
 
-static char	*ft_itoa(int n)
+static char	*ft_itoa_new(unsigned int n)
 {
 	char	*result;
 	int		i;
 	long	number;
 
 	number = n;
-	i = get_size(number);
+	i = get_size_new(number);
 	result = (char *)malloc(sizeof(char) * (i + 1));
 	if (!result)
 		return (NULL);
@@ -47,12 +47,12 @@ static char	*ft_itoa(int n)
 	return (result);
 }
 
-int	ft_putnbr(int number)
+int	ft_putnbr_new(unsigned int number)
 {
 	char	*res;
 	int		i;
 
-	res = ft_itoa(number);
+	res = ft_itoa_new(number);
 	if (!res)
 		return (0);
 	i = ft_strlen(res);

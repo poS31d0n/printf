@@ -1,5 +1,5 @@
 
-#include "includes/libft.h"
+#include "ft_printf.h"
 
 static int	ft_pointlen(unsigned int n)
 {
@@ -34,7 +34,7 @@ int	ft_putnbr_up(unsigned int n)
 			str[i] = '0' + n % 16;
 		n /= 16;
 	}
-	result = ft_strstr(str);
+	result = ft_putstr(str);
 	free(str);
 	return (result);
 }

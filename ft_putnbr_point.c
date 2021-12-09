@@ -1,5 +1,5 @@
 
-#include "includes/libft.h"
+#include "ft_printf.h"
 
 static int	ft_pointlen(size_t n)
 {
@@ -14,7 +14,7 @@ static int	ft_pointlen(size_t n)
 	return (i);
 }
 
-int	ft_put_point(size_t n)
+int	ft_putnbr_point(size_t n)
 {
 	int		i;
 	char	*str;
